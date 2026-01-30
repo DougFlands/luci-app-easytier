@@ -820,6 +820,6 @@ reload_service() {
 service_triggers() {
 	procd_add_reload_trigger "easytier"
 	#如果WAN网络接口上线则触发重新启动easytier
-        procd_add_interface_trigger "interface.*.up" wan /etc/init.d/easytier reload
+        #procd_add_interface_trigger "interface.*.up" wan /etc/init.d/easytier reload
 }
 
